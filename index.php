@@ -1,10 +1,13 @@
-<body bgcolor='black'>
-Welcome to my page.
-These are my friends Shubh(extreme left), Yashika(mid) and Shivansh(extreme right).
+Welcome to Tanmay Sharma's page.
+These are my friends Shubh Gupta(extreme left), Yashika Khandelwal(mid) and Shivansh Khandelwal(extreme right).
 <pre>
+<html>
+<body>
 <?php
 
-echo "<img src='https://.cloudfront.net/Tanmay's_friend.jpg' width='600' height='300'
+echo "<img src='https://tanmay786.s3.ap-south-1.amazonaws.com/Tanmay's_friends.jpg' width='600' height='300'
 
 ?>
+</body>
+</html>
 </pre>
