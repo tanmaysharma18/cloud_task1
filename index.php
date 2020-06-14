@@ -5,7 +5,7 @@ These are my friends Shubh Gupta(extreme left), Yashika Khandelwal(mid) and Shiv
 <body>
 <?php
 echo "<img src='https://d1vg6nrps5v984.cloudfront.net
-/Tanmay's_friends.jpeg' , width='600', height='300' />";
+/Tanmay's_friends.jpeg' width='300' height='140' />";
 ?>
 </body>
 </html>
