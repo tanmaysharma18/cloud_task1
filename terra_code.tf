@@ -56,6 +56,7 @@ resource "aws_instance" "task1" {
       "sudo systemctl enable httpd",
     ]
   }
+	
   tags = {
     Name = "os1"
   }
@@ -133,6 +134,7 @@ resource "aws_s3_bucket" "mys3" {
   }
 
 }
+
 locals {
   s3_origin_id = "mys3Origin"
 }
@@ -144,8 +146,8 @@ depends_on = [
   aws_s3_bucket.mys3,
 ]
   bucket       = "tanmay786"
-  key          = "Tanmay's_friends.jpeg"
-  source       = "C:/Users/dell/Downloads/Tanmay's_friends.jpeg"
+  key          = "Tanmay's_friends.jpg"
+  source       = "C:/Users/dell/Downloads/Tanmay's_friends.jpg"
   acl          = "public-read"
   content_type = "image or jpeg"
 }
@@ -156,8 +158,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = aws_s3_bucket.mys3.bucket_regional_domain_name
     origin_id   = local.s3_origin_id
-
-    
   }
 
   enabled             = true
@@ -170,7 +170,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     bucket          = "tanmay786.s3.amazonaws.com"
     prefix          = "myprefix"
   }
-
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
