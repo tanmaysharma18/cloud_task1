@@ -5,7 +5,7 @@ These are my friends Shubh (Extreme Left), Yashika (mid) and Shivansh (Extreme R
 <body>
 <?php
 echo "<img src='https://d1vg6nrps5v984.cloudfront.net
-/my_friends.jpg' width='610' height='290' />";
+/my_friends.jpg' width='1100' height='500' />";
 ?>
 </body>
 </html>
